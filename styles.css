@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hamburger{
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+.hamburger div{
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background-color:  rgb(128, 32, 32);;
+}
+.rover-hp-container{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto;
+    gap: 5rem;
+    align-items: center;
+    background-color: rgb(176, 230, 206);
+}
+.rover-header-container a:hover {
+    color: rgb(128, 32, 32);
+    padding: 0 5px 2px 0;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.rover-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  z-index: 2;
+}
+.rover-header-left{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    gap: 1rem;
+    align-items: left;
+    justify-content: left;
+ }
+ .rover-header-right{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    gap: 1rem;
+ }
+ .rover-hero-container{
+    color: rgb(128, 32, 32);
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    text-align:left ;
+    align-items: center;
+    width: 20rem;
+ }
+ .sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color:white;
+    box-shadow: 5px 5px 5px 5px black;
+ }
+ .dog{
+    width: 25rem;
+ }
+ .rover-cta{
+    background-color: rgb(12, 144, 100);
+    border-radius: .5rem;
+    border:3px solid rgb(9, 81, 9);
+    color: white;
+    width: 20rem;
+    text-align: center;
+ }
+ .rover-middle-section{
+    color: rgb(128, 32, 32);
+    display: grid; 
+    grid-template-rows: auto;
+    text-align: center;
+    gap: 2rem;
+}
+.rover-mobile-hero{
+    box-shadow: 5px 5px 5px 5px black;
+    
+    height: 20rem ;
+    width: 20rem;
+}
+.rover-mobile-hero-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.rover-facts-container{
+    display: flex;
+    flex-direction: column ;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.box3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.box2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.card{
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px 5px black;
+    color: rgb(128, 32, 32);
+
+}
+
+.rover-cta-box .card{
+    width: 25rem !important;
+}
+.rover-cta-box .card-img-top{
+    width: 9rem;
+}
+.bigCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.btn-primary{
+    width: 23rem;
+    border: none;
+    align-items: center;
+    background-color:  rgb(9, 81, 9);
+}
+.text-bg-dark{
+    display: f;
+    width: 60rem;
+}
+.text-bg-dark h1,h4,h5{
+    text-shadow: -1px -1px 0 #fdfbfb, 1px -1px 0 #f4f3f3, -1px 1px 0 #f1eeee, 1px 1px 0 #f5f4f4;
+}
+.rover-123-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.rover-123-container h2{
+    border-radius: 2rem;
+    height: 3rem;
+    background-color: rgb(9, 81, 9);
+    text-align: center;
+    color:rgb(247, 244, 244);
+    text-shadow: -1px -1px 0 #040404, 1px -1px 0 #030303, -1px 1px 0 #0a0a0a, 1px 1px 0 #030303;
+
+}
+.rover-123-item-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.rover-middle-section h2{
+    border-radius: 2rem;
+    height: 3rem;
+    background-color: rgb(9, 81, 9);
+    text-align: center;
+    color:rgb(247, 244, 244);
+    text-shadow: -1px -1px 0 #040404, 1px -1px 0 #030303, -1px 1px 0 #0a0a0a, 1px 1px 0 #030303;
+
+}
+.nav-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;  
+    align-items:center;
+    gap: 1rem;
+}
+@media only screen and (max-width: 768px){
+    .rover-hp-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .rover-header-container{
+        position: relative;
+        padding: 0 20px;
+        z-index: 2;
+    }
+    .hamburger{
+        display:block;
+    }
+   .nav-links{
+    color: rgb(9, 81, 9);
+    background-color: rgb(183, 243, 183);
+    margin: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    height: auto;
+    top: -250%;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    transition: 0.3s;
+   }
+   .nav-links a{
+    display: block;
+    text-align: center;
+    color: rgb(9, 81, 9); 
+    font-size: 1.3rem;
+    margin: 5px 0;
+    padding: 10px 100px;
+    transition: 0.2;
+   }
+   .rover-hp-container{
+    font-size: 0.8rem;
+    width: 100%;
+   }
+   .sec1{
+    width:22rem ;
+    align-items: center;
+   }
+   .rover-hero-container .rover-cta{
+    width: 10rem;
+   }
+   .dog{
+    width: 6rem;
+   }
+  .rover-middle-section .h{
+    width: 22rem;
+    align-items: center;
+     }
+     .rover-mobile-hero-container{
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        justify-content: center;
+        align-items: center;
+     }
+
+    .text-bg-dark{
+      width: 22rem;
+      align-items: center;
+     }
+    
+    .rover-123-container .h{
+        width: 22rem;
+        height: fit-content;
+      align-items: center;
+    }
+    .rover-123-item-container{
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1rem !important;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+    }
+    .rover-123-item-container .card{
+        width:fit-content !important;
+        align-items: center;
+    }
+    .box3{
+        display: flex ;
+        flex-direction: column;
+        gap: 1rem ;
+        justify-content: center;
+        align-items: center;
+    }
+    .box2{
+        display: flex ;
+        flex-direction: column;
+        gap: 1rem ;
+        justify-content: center;
+        align-items: center;
+    }
+    .rover-cta-box .card{
+        width: 20rem !important;
+    }
+    .rover-cta-box .card .btn-primary{
+        width: 15rem;
+
+    }
+}
